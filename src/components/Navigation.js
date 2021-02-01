@@ -57,7 +57,7 @@ class SiderMenu extends React.Component {
       <Layout className="site-layout">
           <Header className="site-layout-background" style={{ padding: 0 }}>
       {/* eslint-disable-next-line react/jsx-no-undef */}
-  <Title level={4} style={{paddingTop: "20px", paddingLeft:"20px", paddingBottom:"20px"}}>Gestión de incidencias</Title>
+  <Title level={4} style={{paddingTop: "20px", paddingLeft:"20px", paddingBottom:"20px"}}>Gestión de incidencias - Tántalo </Title>
       </Header>
       <Content
       className="site-layout-background"
