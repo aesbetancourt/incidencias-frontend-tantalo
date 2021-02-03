@@ -7,12 +7,14 @@ import Ticket from './Ticket';
 //  Reports
 import Incidents from './Incidents';
 import Unregistered from './Unregistered';
+import Users from './Users';
 
 // Icons
 import {
   // LogoutOutlined,
   FileTextOutlined,
-  FileSearchOutlined
+  FileSearchOutlined,
+  UserOutlined
 } from '@ant-design/icons';
 
 const { Title } = Typography;
@@ -52,6 +54,9 @@ class SiderMenu extends React.Component {
                 No Registrados
               </Menu.Item>
             </SubMenu>
+          <Menu.Item key="4" icon={<UserOutlined />} onClick={() => this.setState({selected: 4})} className="customclass">
+              Usuarios
+          </Menu.Item>
       </Menu>
       </Sider>
       <Layout className="site-layout">
@@ -72,6 +77,7 @@ class SiderMenu extends React.Component {
    {this.state.selected === 1 ? <Ticket/> : null}
    {this.state.selected === 2 ? <Incidents/> : null}
    {this.state.selected === 3 ? <Unregistered/> : null}
+   {this.state.selected === 4 ? <Users/> : null}
   </Content>
    <Footer style={{ textAlign: 'center', paddingTop: 0 }}>Intelix Synergy © 2020</Footer>
       </Layout>
